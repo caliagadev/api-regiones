@@ -1,0 +1,27 @@
+{
+  "name": "api-regiones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caliagadev/api-regiones.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caliagadev/api-regiones/issues"
+  },
+  "homepage": "https://github.com/caliagadev/api-regiones#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "express": "^4.19.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.3"
+  }
+}
