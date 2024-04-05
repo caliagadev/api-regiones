@@ -1,11 +1,12 @@
 import { Request, Response } from 'express';
-import { RegionModel } from '../../models/RegionModel' 
+import { ComunaModel } from '../../models/ComunaModel' 
 
-const region = new RegionModel();
+const comuna = new ComunaModel();
 
-export function regionList(req: Request, res: Response) {
+export function comunaListByIdRegion(req: Request, res: Response) {
+    const idRegion: any = req.params.idRegion;
 
-    region.regionList((error, results) => {
+    comuna.comunaList(idRegion, (error, results) => {
       if (error) {
         console.error('Error al obtener datos:', error);
         res.status(500).json({ error: 'Error al obtener datos de la base de datos' });
@@ -16,10 +17,10 @@ export function regionList(req: Request, res: Response) {
     });
 }
 
-export function regionById(req: Request, res: Response) {
+export function comunaById(req: Request, res: Response) {
     const id: any = req.params.id;
 
-    region.getRegionById(id, (error, results) => {
+    comuna.getComunaById(id, (error, results) => {
         if (error) {
           console.error('Error al obtener el dato por ID:', error);
           res.status(500).json({ error: 'Error al obtener el dato por ID' });

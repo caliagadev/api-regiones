@@ -19,9 +19,13 @@
   "homepage": "https://github.com/caliagadev/api-regiones#readme",
   "devDependencies": {
     "@types/express": "^4.17.21",
+    "@types/mysql": "^2.15.26",
     "express": "^4.19.2",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "mysql": "^2.18.1"
   }
 }

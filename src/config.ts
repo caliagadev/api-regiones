@@ -5,8 +5,8 @@ export default {
     },
     db: {
         host: 'localhost',
-        user: 'tu_usuario',
-        password: 'tu_contraseña',
-        database: 'nombre_de_tu_base_de_datos'
+        user: 'root',
+        password: '',
+        database: 'apis'
     }
 }
